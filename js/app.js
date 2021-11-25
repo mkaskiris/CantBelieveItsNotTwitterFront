@@ -109,23 +109,23 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
           },
         };
 
-        fetch(`http://localhost:${port}/entries/${idInfo}/add`, options)
+        fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/add`, options)
         })
 
       like.addEventListener('click', e =>{
         e.preventDefault();
         e.stopImmediatePropagation();
-       fetch(`http://localhost:${port}/entries/${idInfo}/likes`)
+       fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/likes`)
       })
 
       love.addEventListener('click', e =>{
         e.preventDefault();
-        fetch(`http://localhost:${port}/entries/${idInfo}/love`)
+        fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/love`)
       })
 
       dislike.addEventListener('click', e =>{
         e.preventDefault();
-        fetch(`http://localhost:${port}/entries/${idInfo}/dislikes`)
+        fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/dislikes`)
       })
     }
 
@@ -153,7 +153,7 @@ function makeNewPost() {
               "Access-Control-Allow-Origin": "*",
             },
           };
-          fetch(`http://localhost:${port}/entries`, options).then((postData) =>
+          fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries`, options).then((postData) =>
             console.log(postData)
           );
         });

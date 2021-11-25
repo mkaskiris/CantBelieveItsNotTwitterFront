@@ -26,7 +26,7 @@ button.addEventListener("click", () => {
 function data() {
   try{
     
-    fetch("http://localhost:3010/entries")
+    fetch("https://cantbelieveitsnottwitter.herokuapp.com/entries")
     
       .then((r) => r.json())
       .then((data) => {
