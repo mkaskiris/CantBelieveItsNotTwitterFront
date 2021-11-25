@@ -115,17 +115,21 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
       like.addEventListener('click', e =>{
         //e.preventDefault();
         //e.stopImmediatePropagation();
+        
        fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/likes`)
+       document.location.reload(true);
       })
 
       love.addEventListener('click', e =>{
         //e.preventDefault();
         fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/love`)
+        document.location.reload(true);
       })
 
       dislike.addEventListener('click', e =>{
         //e.preventDefault();
         fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/dislikes`)
+        document.location.reload(true);
       })
     }
 
