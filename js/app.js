@@ -59,7 +59,7 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
 
 
       for (let i in commentsInfo) {
-        console.log(commentsInfo);
+        //console.log(commentsInfo);
           const comment = document.createElement("p")
           comment.textContent = commentsInfo[i];
           commentbox.appendChild(comment);
