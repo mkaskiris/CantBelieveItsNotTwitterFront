@@ -39,9 +39,12 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
   
       //Comments Area
       const comment = document.createElement("button");
+      const commentNum = document.createElement('p');
       comment.className = "btn btn-lg btn-dark";
       comment.textContent = "comments";
+      commentNum.textContent = commentsInfo.length;
       buttonArea.appendChild(comment);
+      buttonArea.appendChild(commentNum);
       const commentbox = document.createElement("div");
       const form = document.createElement("form");
       const input = document.createElement("input");
