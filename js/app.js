@@ -94,7 +94,7 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
   
       //event listener of comments
       form.addEventListener("submit", (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         console.log("Submitted");
         const commentValue = {
           code: e.target.commentInput.value,
@@ -113,18 +113,18 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
         })
 
       like.addEventListener('click', e =>{
-        e.preventDefault();
-        e.stopImmediatePropagation();
+        //e.preventDefault();
+        //e.stopImmediatePropagation();
        fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/likes`)
       })
 
       love.addEventListener('click', e =>{
-        e.preventDefault();
+        //e.preventDefault();
         fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/love`)
       })
 
       dislike.addEventListener('click', e =>{
-        e.preventDefault();
+        //e.preventDefault();
         fetch(`https://cantbelieveitsnottwitter.herokuapp.com/entries/${idInfo}/dislikes`)
       })
     }
@@ -134,7 +134,7 @@ function makeNewPost() {
         const postForm = document.querySelector("#postForm");
         postForm.addEventListener("submit", (e) => {
           console.log("Submitted");
-          e.preventDefault();
+          //e.preventDefault();
           const postData = {
             title: e.target.postTitle.value,
             message: e.target.postMessage.value,
