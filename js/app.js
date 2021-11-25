@@ -2,7 +2,7 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
       //Create Title, message and Giphy
       const date = document.createElement("p")
       date.textContent = dateInfo
-      console.log(dateInfo)
+      //console.log(dateInfo)
       const title = document.createElement("h1");
       title.textContent = titleInfo;
       const message2 = document.createElement("p");
@@ -135,7 +135,6 @@ function makeACard(dateInfo,idInfo,titleInfo,messageInfo,giphyinfo,likeInfo,disl
         document.location.reload(true);
       })
     }
-
     
 function makeNewPost() {
         const postForm = document.querySelector("#postForm");
